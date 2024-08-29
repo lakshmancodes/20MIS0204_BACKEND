@@ -7,7 +7,7 @@ import (
 	"os"
 	"youtube-fetcher-trademarkia/internal/server"
 	database "youtube-fetcher-trademarkia/internal/sqldatabase"
-
+	youtube "youtube-fetcher-trademarkia/internal/youtube"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
 )
@@ -51,6 +51,9 @@ func main() {
 
 	// Initialize the database (no arguments needed)
 	database.InitDB()
+
+	//connect the api and fetch the results from API
+	go youtube.StartFetching(envVars["API_KEY"], "your-search-query", database.DB)
 
 	// Initialize the router
 	r := mux.NewRouter()
