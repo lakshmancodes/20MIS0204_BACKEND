@@ -49,7 +49,7 @@ DB_PASSWORD=xxx
 DB_NAME=youtube_videos
 
 # YouTube API Key
-API_KEY=AIzaSyBhrDtIxAOBKHKRquclq0j6c3XUEdhr2QQ
+API_KEY=xxx
 
 # Fetch Interval (in minutes)
 FETCH_INTERVAL=10
