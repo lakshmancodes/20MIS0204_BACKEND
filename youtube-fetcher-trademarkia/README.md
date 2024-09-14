@@ -41,11 +41,11 @@ youtube.go: Contains functions for interacting with the YouTube API.
 
 Create and Configure the .env File
 # MySQL Environment Variables
-MYSQL_CONN="root:@October4th2018@tcp(localhost:3306)/youtube_videos"
+MYSQL_CONN="root:xxx@tcp(localhost:3306)/youtube_videos"
 DB_HOST=db
 DB_PORT=3307
 DB_USER=root
-DB_PASSWORD=@October4th2018
+DB_PASSWORD=xxx
 DB_NAME=youtube_videos
 
 # YouTube API Key
